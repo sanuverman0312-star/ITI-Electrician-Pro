@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "project": "ITI Electrician Pro Learning App",
+    "date": "2026-01-15",
+    "prepared_by": "AI Assistant"
+  },
+  "product_overview": "ITI Electrician Pro is a comprehensive educational platform designed to empower ITI Electrician trade students with quality learning materials, interactive mock tests, professional electrical calculators, detailed safety guidelines, and quick access to official ITI resources. The app supports both web (Next.js PWA) and Android platforms, aiming to provide seamless offline capabilities, bilingual content, and a modern, engaging user experience.",
+  "core_goals": [
+    "Deliver complete syllabus coverage for 1st and 2nd year ITI Electrician students with detailed chapters and illustrative content.",
+    "Provide a rich mock test environment with 500+ questions to enhance learning through practice and assessment.",
+    "Offer a suite of 10+ professional electrical calculators for practical applications and workshop calculations.",
+    "Ensure comprehensive safety education through detailed safety tips, PPE guides, emergency procedures, and quizzes.",
+    "Integrate direct links to official ITI portals and resources for ease of access to results, certificates, admissions, and job opportunities.",
+    "Create a fast, responsive, and accessible UI using the latest web and mobile technologies with offline support and local progress storage.",
+    "Maintain strict data privacy, avoiding collection of personal data and supporting secure, anonymous analytics.",
+    "Build a scalable architecture to allow future additions of trades, features, and multimedia learning resources."
+  ],
+  "key_features": [
+    "Home Screen with Search Bar, Quick Access Cards, Stats Section, and Smooth Animations",
+    "Comprehensive Chapters section organized by year and topic with topic descriptions, formulas, diagrams, progress tracking, and downloadable resources",
+    "Robust Calculator Section featuring 10 specialized tools including Load Calculator, Power Calculator, MCB Calculator, RCCB Calculator, and Voltage Drop Calculator",
+    "Interactive Mock Test Suite with multiple test types, timed tests, detailed result analysis, explanations, and question navigation features",
+    "In-depth Safety Section covering general electrical safety rules, personal protective equipment, emergency procedures, safety signs, and an interactive safety quiz",
+    "More ITI Links offering quick access to NCVT/SCVT results portals, certificate services, admission forms, syllabus downloads, job boards, and official websites",
+    "About Us and Privacy Policy pages with detailed organizational information, compliance statements, and user rights",
+    "Progressive Web App (PWA) implementation for offline support, fast loading, and home screen installation",
+    "State management with Zustand and localStorage based session management for admin features",
+    "SEO optimized URL structure, metadata, and sitemap for better discoverability"
+  ],
+  "user_flow_summary": [
+    "User opens app and is greeted by the Home page with search and quick access cards to main features.",
+    "User navigates to Chapters to study detailed lessons structured by year and topics with expandable content and visual aids.",
+    "User accesses Calculators to perform various electrical and load calculations by selecting inputs and viewing explained results.",
+    "User takes Mock Tests, choosing test sets by year or chapter, answering questions with timer and navigation controls, then reviewing scored results with explanations.",
+    "User explores Safety section to learn electrical safety procedures, PPE usage, emergency steps, and tests knowledge via quizzes.",
+    "User visits More section for quick links to official ITI portals and downloads, as well as About Us and Privacy Policy information.",
+    "Admin personnel access the Admin Panel via secure login to manage content including questions, links, safety tips, and dashboard statistics.",
+    "Users benefit from offline capabilities and progress is stored locally with ability to resume tests and track completed chapters."
+  ],
+  "validation_criteria": [
+    "All chapters loaded correctly with complete content, images, and formulas visible offline.",
+    "Mock tests operate with no scoring errors; timer functions and navigation controls perform smoothly.",
+    "Calculators return accurate results with validated inputs and provide clear explanations.",
+    "Safety content displays all images and procedural steps; safety quiz functions correctly with answer validation.",
+    "All external ITI links open either in WebView (Android) or new browser tab (Web) without errors.",
+    "Admin Panel correctly manages data and persists sessions using localStorage, with content updates reflected in app.",
+    "UI elements maintain consistent styling, responsiveness, and animations across supported device sizes and platforms.",
+    "SEO metadata is present and valid; sitemap updates appropriately with all routes included.",
+    "Offline caching and PWA features enable browsing chapters and previous tests without connectivity.",
+    "Privacy policy compliance observed with no collection of personal user data and anonymized analytics only."
+  ],
+  "code_summary": {
+    "tech_stack": [
+      "JavaScript",
+      "Next.js 14",
+      "React 18",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Lucide React",
+      "Zustand"
+    ],
+    "features": [
+      {
+        "name": "Admin Panel",
+        "description": "Administrative interface for managing app content like links, questions, and safety tips. Uses localStorage for basic session management.",
+        "files": [
+          "src/app/admin/dashboard/page.js",
+          "src/app/admin/links/page.js",
+          "src/app/admin/login/page.js",
+          "src/app/admin/questions/page.js",
+          "src/app/admin/safety/page.js",
+          "src/lib/adminConfig.js"
+        ]
+      },
+      {
+        "name": "Load Calculator",
+        "description": "Electrical load calculator for various appliances.",
+        "files": [
+          "src/app/calculator/page.js"
+        ]
+      },
+      {
+        "name": "Mock Tests",
+        "description": "Interactive mock tests for ITI students.",
+        "files": [
+          "src/app/mock-test/page.js",
+          "src/data/questions.js"
+        ]
+      },
+      {
+        "name": "Chapters",
+        "description": "Learning chapters for 1st and 2nd year students.",
+        "files": [
+          "src/app/chapters/page.js",
+          "src/data/chapters.js"
+        ]
+      }
+    ]
+  }
+}

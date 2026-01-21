@@ -1,0 +1,377 @@
+[
+  {
+    "id": "TC001",
+    "title": "Home Screen Rendering and Navigation",
+    "description": "Verify that the Home screen loads correctly with search bar, quick access cards, stats section, and smooth animations, and all navigation links work properly.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Launch the app and navigate to the Home screen"
+      },
+      {
+        "type": "assertion",
+        "description": "Check that search bar, quick access cards, and stats section are displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify animations load smoothly without performance issues"
+      },
+      {
+        "type": "action",
+        "description": "Click on each quick access card to navigate to the respective feature"
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm navigation to Chapters, Calculators, Mock Tests, Safety, and More ITI Links sections"
+      }
+    ]
+  },
+  {
+    "id": "TC002",
+    "title": "Chapters Section Content Display and Offline Access",
+    "description": "Verify chapters load completely with all textual content, images, formulas, diagrams, and downloadable resources available both online and offline.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the Chapters section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify chapters are organized by year and topic"
+      },
+      {
+        "type": "action",
+        "description": "Expand multiple chapters and verify visibility of descriptions, formulas, diagrams, and resource download links"
+      },
+      {
+        "type": "action",
+        "description": "Turn off network connection to simulate offline mode"
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm previously accessed chapter content is still viewable with all images and formatting intact"
+      }
+    ]
+  },
+  {
+    "id": "TC003",
+    "title": "Calculator Functional Accuracy and Input Validation",
+    "description": "Verify all 10 calculators accept valid inputs, calculate accurate results according to electrical formulas, and provide clear result explanations. Validate error handling for invalid inputs.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the Calculator section"
+      },
+      {
+        "type": "action",
+        "description": "Select each of the 10 calculators including Load, Power, MCB, RCCB, and Voltage Drop calculators"
+      },
+      {
+        "type": "action",
+        "description": "Input valid sample data for each calculator and perform calculation"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify calculation output is accurate and matches expected electrical computations"
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm the result explanations are clear and relevant"
+      },
+      {
+        "type": "action",
+        "description": "Input invalid data, such as negative numbers, zero where not allowed, or non-numeric values"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify appropriate error messages appear and no crashes occur"
+      }
+    ]
+  },
+  {
+    "id": "TC004",
+    "title": "Mock Test Workflow and Result Analysis",
+    "description": "Verify the mock test suite functions properly including test selection by year or chapter, timer functionality, question navigation, scoring accuracy, and result explanations.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the Mock Test section"
+      },
+      {
+        "type": "action",
+        "description": "Select a mock test by year and start it"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the timer starts and counts down correctly"
+      },
+      {
+        "type": "action",
+        "description": "Answer questions including navigating forward and backward through them"
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm answers can be changed before submission"
+      },
+      {
+        "type": "action",
+        "description": "Submit the test"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the score is calculated accurately with no inconsistencies"
+      },
+      {
+        "type": "assertion",
+        "description": "Check detailed result analysis and explanations are displayed correctly"
+      },
+      {
+        "type": "action",
+        "description": "Repeat test with a chapter-based mock test and verify similar functionality"
+      }
+    ]
+  },
+  {
+    "id": "TC005",
+    "title": "Safety Section Content and Interactive Quiz Validation",
+    "description": "Verify all safety guidelines, PPE guides, emergency procedures, and safety signs content render correctly, including images and procedural steps, and that the interactive safety quiz validates answers properly.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the Safety section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify display of general electrical safety rules, PPE guides, emergency procedures, and safety signs with images"
+      },
+      {
+        "type": "action",
+        "description": "Open the interactive safety quiz"
+      },
+      {
+        "type": "action",
+        "description": "Answer quiz questions, selecting both correct and incorrect options"
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm the quiz provides immediate feedback on answers and validates submissions"
+      },
+      {
+        "type": "action",
+        "description": "Complete the quiz and view summary results"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify quiz results accurately reflect answers given"
+      }
+    ]
+  },
+  {
+    "id": "TC006",
+    "title": "More ITI Links Accessibility and Link Integrity",
+    "description": "Verify all provided official ITI portal links within the More section open correctly as per platform specification: WebView on Android and new browser tabs on web, with no loading errors.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the More ITI Links section"
+      },
+      {
+        "type": "action",
+        "description": "Click each external ITI portal link, including results portals, certificate services, admission forms, syllabus downloads, and job boards"
+      },
+      {
+        "type": "assertion",
+        "description": "On Android, confirm links open inside an embedded WebView"
+      },
+      {
+        "type": "assertion",
+        "description": "On Web, confirm links open in a new browser tab"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the linked pages load successfully without errors"
+      }
+    ]
+  },
+  {
+    "id": "TC007",
+    "title": "Admin Panel Authentication and Content Management",
+    "description": "Verify admin login works with correct credentials, session persists using localStorage, and admin can add, edit, and delete questions, links, safety tips, and view dashboard statistics with changes reflected in the app.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to Admin Panel login page"
+      },
+      {
+        "type": "action",
+        "description": "Input valid admin credentials and submit"
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm successful login and session persistence via localStorage"
+      },
+      {
+        "type": "action",
+        "description": "Access questions management and add a new question with all required fields"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the new question appears in the app's mock test questions"
+      },
+      {
+        "type": "action",
+        "description": "Edit an existing link in the links management section"
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm updated link opens correctly from the More section"
+      },
+      {
+        "type": "action",
+        "description": "Delete a safety tip from the safety management page"
+      },
+      {
+        "type": "assertion",
+        "description": "Ensure the safety tip is removed from the Safety section"
+      },
+      {
+        "type": "action",
+        "description": "Access the dashboard page and view statistics"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify statistics display accurate and updated data"
+      }
+    ]
+  },
+  {
+    "id": "TC008",
+    "title": "Offline Functionality and Local Progress Storage",
+    "description": "Verify the app supports full offline usage including viewing previously loaded chapters and mock tests, resuming tests, and persists user progress locally with no data loss after app restart or network loss.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Load several chapters and start a mock test online"
+      },
+      {
+        "type": "action",
+        "description": "Answer some questions, then close the app"
+      },
+      {
+        "type": "action",
+        "description": "Disable network connection and reopen the app"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify previously accessed chapter content is available offline with all data intact"
+      },
+      {
+        "type": "action",
+        "description": "Resume the mock test from the saved state"
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm test state restored including answered questions and timer if applicable"
+      },
+      {
+        "type": "action",
+        "description": "Complete and submit the test while offline"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify results are calculated and stored locally"
+      }
+    ]
+  },
+  {
+    "id": "TC009",
+    "title": "SEO Metadata and Sitemap Verification",
+    "description": "Verify that all app pages contain valid SEO metadata including titles, descriptions, and keywords, and that the sitemap file includes entries for all routes and is updated accordingly.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Access the source code or rendered pages for key routes including Home, Chapters, Calculators, Mock Tests, Safety, More, and Admin login"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify each page contains appropriate metadata tags for SEO"
+      },
+      {
+        "type": "action",
+        "description": "Fetch the sitemap file"
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm that the sitemap lists URLs for all main routes"
+      }
+    ]
+  },
+  {
+    "id": "TC010",
+    "title": "Privacy Policy Compliance and Data Collection Validation",
+    "description": "Verify the app does not collect or store any personal user data, supports only secure anonymous analytics, and that the Privacy Policy page accurately reflects these practices.",
+    "category": "security",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Use network inspection tools to monitor data transmissions performed by the app"
+      },
+      {
+        "type": "assertion",
+        "description": "Check that no personal data such as usernames, emails, or device identifiers are transmitted"
+      },
+      {
+        "type": "action",
+        "description": "Access the Privacy Policy page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify that the Privacy Policy text clearly states no personal data collection and describes anonymized analytics only"
+      }
+    ]
+  },
+  {
+    "id": "TC011",
+    "title": "UI Responsiveness and Consistency Across Devices",
+    "description": "Verify all UI elements including buttons, text fields, animations, and navigations are responsive and maintain consistent styling across supported device sizes and platforms.",
+    "category": "ui",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Open the app on multiple device sizes including mobile, tablet, and desktop browsers"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify UI layouts adapt appropriately without overlapping or truncated content"
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm all buttons, links, and interactive elements are sized and spaced correctly"
+      },
+      {
+        "type": "assertion",
+        "description": "Check that animations run smoothly and consistently on each device"
+      }
+    ]
+  }
+]

@@ -1,0 +1,48 @@
+{
+    "tech_stack": [
+        "JavaScript",
+        "Next.js 14",
+        "React 18",
+        "Tailwind CSS",
+        "Framer Motion",
+        "Lucide React",
+        "Zustand"
+    ],
+    "features": [
+        {
+            "name": "Admin Panel",
+            "description": "Administrative interface for managing app content like links, questions, and safety tips. Uses localStorage for basic session management.",
+            "files": [
+                "src/app/admin/dashboard/page.js",
+                "src/app/admin/links/page.js",
+                "src/app/admin/login/page.js",
+                "src/app/admin/questions/page.js",
+                "src/app/admin/safety/page.js",
+                "src/lib/adminConfig.js"
+            ]
+        },
+        {
+            "name": "Load Calculator",
+            "description": "Electrical load calculator for various appliances.",
+            "files": [
+                "src/app/calculator/page.js"
+            ]
+        },
+        {
+            "name": "Mock Tests",
+            "description": "Interactive mock tests for ITI students.",
+            "files": [
+                "src/app/mock-test/page.js",
+                "src/data/questions.js"
+            ]
+        },
+        {
+            "name": "Chapters",
+            "description": "Learning chapters for 1st and 2nd year students.",
+            "files": [
+                "src/app/chapters/page.js",
+                "src/data/chapters.js"
+            ]
+        }
+    ]
+}

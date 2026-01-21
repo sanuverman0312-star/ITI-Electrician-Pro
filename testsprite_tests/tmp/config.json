@@ -1,0 +1,18 @@
+{
+  "status": "commited",
+  "type": "frontend",
+  "scope": "codebase",
+  "localEndpoint": "http://localhost:3000",
+  "executionArgs": {
+    "projectName": "ITI ELECTRICIAN PRO - COMPLETE CODE",
+    "projectPath": "d:\\web development\\new pro\\ITI ELECTRICIAN PRO - COMPLETE CODE",
+    "testIds": [
+      "TC007"
+    ],
+    "additionalInstruction": "Focus on TC007 (Admin Panel). The admin credentials are username: 'admin' and password: 'admin@123' as per src/lib/adminConfig.js. Test the login, dashboard, questions management, links management, and safety management.",
+    "envs": {
+      "API_KEY": "sk-user-ZldWZkVyFiYD6iIbcgaWZug_DX2a5KSfsseHoa1Z2scwZLlbmuMedl-J78dJMaS7FQccOe-AKWDM7FLJZh-EjSLLS6WkSXrHng_bHDLG9Gzxnxq5MkCn5gxFFZIqHIAtnXg"
+    }
+  },
+  "proxy": "http://80fb6435-72b6-4c91-9b56-7cc4c0b21025:9ZfuUBSbtFGTqRuFfoxyFubuuZTQwjqF@tun.testsprite.com:8080"
+}
